@@ -1,2 +1,0 @@
-elasticsearch:
-  hostlist: ${eshostlist:192.168.100.51:9200}
