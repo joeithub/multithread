@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.enlink"})
-@ComponentScan(basePackages = {"com.enlink.commons"})
 public class MultithreadApplication {
 
     public static void main(String[] args) {
