@@ -5,18 +5,26 @@ import com.enlink.commons.Search;
 import java.util.Map;
 
 public class CostumThreadSearch implements Runnable {
-   Search search = new Search();
+
     @Override
     public void run() {
         int count = 0;
+        Search search = new Search();
+
         while (true){
             count ++;
             Map<String, Boolean> map = search.searchApi();
             Boolean flag = map.get("是否超时");
-            if (flag){
+//            System.out.print(count);
+//            System.out.println(flag);
+            System.out.println(flag);
+            if (flag != false){
+                System.out.println(count);
                 System.out.println("第"+count+"请求异常");
-                break;
+            }else {
+                System.out.println(count);
             }
+
         }
     }
 }

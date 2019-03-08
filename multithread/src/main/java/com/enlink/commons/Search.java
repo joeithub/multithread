@@ -42,7 +42,7 @@ public class Search {
             TimeValue took = searchResponse.getTook();
             Boolean terminatedEarly = searchResponse.isTerminatedEarly();
             boolean timedOut = searchResponse.isTimedOut();
-            System.out.println("是否提前结束"+terminatedEarly);
+//            System.out.println("是否提前结束"+terminatedEarly);
             System.out.println("状态码"+status1+"花费时间"+took);
             result.put("是否超时",timedOut);
 
